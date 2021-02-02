@@ -6,14 +6,28 @@
 #전체 평균 점수를 구하는 프로그램을 작성하세요. 단, 소숫점 자리는 모두 버립니다.
 
 # >>입력
-20 30 40
+# 20 30 40
 
-# >>출력
-30
+# # >>출력
+# 30
 
 # ------------------------------
 
-korean, math, english = map(int, input('국어 수학 영어 시험의 점수를 입력하세요.').split())
-s = (korean + math + english) // 3
+# korean, math, english = map(int, input('국어 수학 영어 시험의 점수를 입력하세요.').split())
+# s = (korean + math + english) // 3
 
-print(s)
+# print(s)
+
+a = input('국어 수학 영어 시험의 점수를 입력하세요.')
+print(a)
+
+b = a.split()
+print(b)
+
+k = int(b[0])
+m = int(b[1])
+e = int(b[2])
+
+ave = (k + m + e) // 3
+print(ave)
+
